@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    <p>this is login file</p>
+    <div class="big-container">
+        <div id="login1">
+            <img src="/img1.jpg" alt="1" id="item1">
+            <img src="/img4.jpg" alt="2" id="item2">
+            <img src="/img3.jpg" alt="3" id="item3">
+            <img src="/img2.jpg" alt="4" id="item4">
+        </div>
+
+        <div id="login2">
+            <div id="login-container">
+                <img id="img1" src="login-avatar.png" height="400" width="400" alt="login-avtar"><br><br>
+                <h2>Login</h2><br>
+                <form id="loginForm">
+                    <input type="text" id="username" placeholder="Mobile Number/Email" required><br><br>
+                    <input type="password" id="password" placeholder="Password" required> <br> <br>
+                    <button type="submit">Continue</button>
+                    <p id="error-message" style="color: red;"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
 </body>
+<script src="login.js"></script>
+
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #f7f5f2;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            gap: 50px; /* Add some space between left and right sides */
+        }
+        .left-side {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column for images */
+            gap: 10px; /* Space between images */
+            grid-template-rows: repeat(3,1fr);
+        }
+        .left-side img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .right-side {
+            background-color: #4c7058;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .login-box {
+            width: 350px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #8a5a44;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #6f4e37;
+        }
+        .logo {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .logo img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="/image_search_1727705385687.jpg" alt="Image 1">
+            <img src="/image_search_1727705396143.jpg" alt="Image 2">
+            <img src="/image_search_1727705425296.jpg" alt="Image 3">
+            <img src="/image_search_1727705454995.png" alt="Image 4">
+        </div>
+        <div class="right-side">
+            <div class="login-box">
+                <div class="logo">
+                    <img src="/login-avatar.png" alt="User Profile" height="50px" width="50px">
+                    <p>Login</p>
+                </div>
+                <form>
+                    <label for="username">Mobile Number/Email</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+
+                    <button type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
